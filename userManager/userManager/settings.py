@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'userProfile_app.apps.UserprofileAppConfig',
+    'Bank_System.apps.BankSystemConfig',
     'rest_framework',
 ]
 
