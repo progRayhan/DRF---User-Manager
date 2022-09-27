@@ -63,7 +63,7 @@ class TakaListAV(APIView):
             else:
                 return Response(serializer.errors)
         else:
-            return Response({'errors':'bank is closed'},status=status.HTTP_400_BAD_REQUEST)
+            return Response({'errors':'bank is closed!'},status=status.HTTP_400_BAD_REQUEST)
     
 class TakaDetailAV(APIView):
     def get(self, request, pk):
