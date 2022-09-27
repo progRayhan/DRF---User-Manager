@@ -27,6 +27,7 @@ class Taka(models.Model):
      balance = models.CharField(max_length=10)
      userName = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
      bank = models.ForeignKey(Bank, on_delete=models.CASCADE)
+     payment_time = models.DateTimeField(auto_now_add=True, null=True)
      
      def __str__(self):
          return f'{self.userName} - {self.balance} - {self.bank}'
